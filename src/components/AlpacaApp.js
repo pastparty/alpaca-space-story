@@ -11,9 +11,7 @@ class AlpacaApp extends React.Component {
 
     render() {
         return (
-            <UI>
-                <p>User interface</p>
-            </UI>
+            <UI />
         );
     }
 }

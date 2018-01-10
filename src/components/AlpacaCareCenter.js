@@ -9,8 +9,8 @@ class AlpacaCareCenter extends React.Component {
     render() {
         return (
             <div>
-                Alpaca Care Center
-                <button>feed alpaca/s</button>
+                <h3>Alpaca Care Center</h3>
+                <button>pet ALPACA</button>
             </div>
         );
     }

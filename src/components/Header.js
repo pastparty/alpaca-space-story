@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 
 const Header = () => {
     return (
-        <header>
+        <div className="c-header">
             <h1>Alpaca Space Story</h1>
-        </header>
+        </div>
     );
 }
 

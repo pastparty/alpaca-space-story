@@ -9,8 +9,10 @@ class Research extends React.Component {
     render() {
         return (
             <div>
-                Research
-                <button>do a research</button>
+                <h3>Research</h3>
+
+                <button>do research 1</button>
+                <button>do research 2</button>
             </div>
         );
     }

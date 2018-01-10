@@ -9,8 +9,7 @@ class PlanetView extends React.Component {
     render() {
         return (
             <div>
-                PlanetView
-                <button>planetname</button>
+                <h3>Planetview</h3>
             </div>
         );
     }

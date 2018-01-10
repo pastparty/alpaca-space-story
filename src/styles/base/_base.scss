@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Oxygen-Sans, Cantarell, Ubuntu, "Franklin Gothic Medium", "Liberation Sans", sans-serif;
+    font-family: Barlow, -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Oxygen-Sans, Cantarell, Ubuntu, "Franklin Gothic Medium", "Liberation Sans", sans-serif;
     font-size: $m-size;
 }
 
@@ -12,5 +12,77 @@ button {
 
     &:disabled {
         cursor: default;
+    }
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: gray;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 280px 400px auto 100px;
+    grid-template-rows: 100px auto auto 60px;
+    grid-gap: 10px;
+    grid-template-areas:
+        // "Header Upgrades PlanetView"
+        // "AlpacaCareCenter Upgrades PlanetView"
+        // "Research ControlCenter Menu"
+        // "Statusbar Statusbar Statusbar";
+
+        // "Header Upgrades PlanetView"
+        // "AlpacaCareCenter . ."
+        // "Research ControlCenter Menu"
+        // "Statusbar . .";
+
+        "Header     AlpacaCareCenter  PlanetView  PlanetView"
+        "Upgrades   AlpacaCareCenter PlanetView  PlanetView"
+        "Research   ControlCenter ControlCenter Menu"
+        "Statusbar  Statusbar    Statusbar     Statusbar";
+        height: 100vh;
+
+    > div {
+        padding: 16px;
+        background: rgba(0,0,0,.05);
+        border-radius: 2px;
+    }
+
+    &__header {
+    }
+
+    &__alpaca-care-center {
+        grid-row: span 2;
+
+    }
+
+    &__planetview {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    &__upgrades {
+    }
+
+    &__research {
+
+    }
+
+    &__control-center {
+        grid-column: span 2;
+    }
+
+    &__menu {
+
+    }
+
+    &__statusbar {
+        grid-column: span 4;
     }
 }
