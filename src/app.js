@@ -3,4 +3,6 @@ import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
 import './styles/style.scss';
 
-ReactDOM.render(<p>React boilerplate</p>, document.getElementById('app'));
+import AlpacaApp from './components/AlpacaApp';
+
+ReactDOM.render(<AlpacaApp />, document.getElementById('app'));
