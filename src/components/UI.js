@@ -26,7 +26,7 @@ class UI extends React.Component {
         return (
             <div className="grid">
                 <div className="grid__header">
-                    <Header />
+                    <Header value="854" />
                 </div>
 
                 <div className="grid__alpaca-care-center">

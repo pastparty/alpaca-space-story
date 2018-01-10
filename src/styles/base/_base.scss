@@ -16,12 +16,24 @@ button {
 }
 
 
-
-
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-size: 1.6rem;
-    font-weight: normal;
-    color: gray;
+    font-weight: bold;
+    color: #808080;
+
+    span {
+        margin-left: 10px;
+        color: rgba(0,0,0,.2);
+        font-size: .8em;
+    }
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: lighten(#808080, 15%);
+    text-transform: uppercase;
 }
 
 
@@ -50,16 +62,18 @@ h1, h2, h3, h4, h5, h6 {
 
     > div {
         padding: 16px;
-        background: rgba(0,0,0,.05);
+        background: rgba(0,0,0,.04);
         border-radius: 2px;
     }
 
     &__header {
+        .ressource-amount {
+            color: #1F85D3;
+        }
     }
 
     &__alpaca-care-center {
         grid-row: span 2;
-
     }
 
     &__planetview {
